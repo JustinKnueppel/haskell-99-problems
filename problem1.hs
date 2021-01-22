@@ -1,5 +1,6 @@
 myLast :: [a] -> a
-myLast = last
+myLast [] = error "Requires at least one element"
+myLast list = last list
 
 main :: IO ()
 main = do
